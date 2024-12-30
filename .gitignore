@@ -172,3 +172,6 @@ cython_debug/
 
 # Project Flow file 
 projectflow.txt
+
+# mongodb demo file 
+mongodb_demo.ipynb
