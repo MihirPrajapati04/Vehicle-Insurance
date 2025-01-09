@@ -85,23 +85,60 @@ pip list
 ---
 
 ## 📂 **Project Structure**
+
 ```
-project/
-├── src/
-│   ├── configuration/
-│   ├── data_access/
-│   ├── entity/
-│   ├── components/
-│   ├── aws_storage/
-│   └── utils/
-├── notebook/
-├── static/
-├── templates/
-├── setup.py
-├── pyproject.toml
-├── requirements.txt
-└── Dockerfile
+- src/
+  - __init__.py
+  - components/
+    - __init__.py
+    - data_ingestion.py
+    - data_validation.py
+    - data_transformation.py
+    - model_trainer.py
+    - model_evaluation.py
+    - model_pusher.py
+  - configuration/
+    - __init__.py
+    - mongo_db_connection.py
+    - aws_connection.py
+  - cloud_storage/
+    - __init__.py
+    - aws_storage.py
+  - data_access/
+    - __init__.py
+    - proj1_data.py
+  - constants/
+    - __init__.py
+  - entity/
+    - __init__.py
+    - config_entity.py
+    - artifact_entity.py
+    - estimator.py
+    - s3_estimator.py
+  - exception/
+    - __init__.py
+  - logger/
+    - __init__.py
+  - pipline/
+    - __init__.py
+    - training_pipeline.py
+    - prediction_pipeline.py
+  - utils/
+    - __init__.py
+    - main_utils.py
+- app.py
+- requirements.txt
+- Dockerfile
+- .dockerignore
+- demo.py
+- setup.py
+- pyproject.toml
+- config/
+  - model.yaml
+  - schema.yaml
 ```
+
+Each file and folder serves a specific purpose in the project, ensuring clean separation of concerns and scalability.
 
 ---
 
